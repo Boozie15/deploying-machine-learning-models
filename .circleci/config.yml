@@ -298,8 +298,6 @@ workflows:
     jobs:
       - section_07_test_app
       - section_07_deploy_app_to_heroku:
-          requires:
-            - section_07_test_app
           filters:
             branches:
               only:
